@@ -20,28 +20,53 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="密码学笔记 古典密码 凯撒密码  简单替换密码  Enigma  攻击方法  暴力破解  频率分析   现代密码对称密码 DES（Data Encrypt Standard）   DES的基本结构是由Horst Fesistel设计的，因此也称为Feistel网络，或结构，或者密码，在网络中，加密的各个步骤称为论， ![DES Feistel网络](D:\bolg\source\images\DE">
+<meta property="og:type" content="article">
+<meta property="og:title" content="笔记">
+<meta property="og:url" content="http://yoursite.com/2020/06/27/%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="密码学笔记 古典密码 凯撒密码  简单替换密码  Enigma  攻击方法  暴力破解  频率分析   现代密码对称密码 DES（Data Encrypt Standard）   DES的基本结构是由Horst Fesistel设计的，因此也称为Feistel网络，或结构，或者密码，在网络中，加密的各个步骤称为论， ![DES Feistel网络](D:\bolg\source\images\DE">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="d:%5Cbolg%5Csource%5Cimages%5C%E5%88%86%E7%B1%BB.png">
+<meta property="og:image" content="d:%5Cbolg%5Csource%5Cimages%5CDES%E5%8A%A0%E8%A7%A3%E5%AF%86%E6%96%B9%E5%BC%8F.png">
+<meta property="og:image" content="d:%5Cbolg%5Csource%5Cimages%5C%E5%8A%A0%E5%AF%86%E4%B8%89%E8%BD%AE.png">
+<meta property="og:image" content="d:%5Cbolg%5Csource%5Cimages%5C3DES.png">
+<meta property="og:image" content="d:%5Cbolg%5Csource%5Cimages%5CCBCjiami.png">
+<meta property="og:image" content="d:%5Cbolg%5Csource%5Cimages%5CCBCshunhuai.png">
+<meta property="og:image" content="d:%5Cbolg%5Csource%5Cimages%5CCBCgongji.png">
+<meta property="og:image" content="d:%5Cbolg%5Csource%5Cimages%5CCBCbijiao.png">
+<meta property="og:image" content="d:%5Cbolg%5Csource%5Cimages%5CCFBjiami.png">
+<meta property="og:image" content="d:%5Cbolg%5Csource%5Cimages%5CCFBgongji.png">
+<meta property="og:image" content="d:%5Cbolg%5Csource%5Cimages%5CCBCCFB.png">
+<meta property="og:image" content="d:%5Cbolg%5Csource%5Cimages%5COFBjiami.png">
+<meta property="og:image" content="d:%5Cbolg%5Csource%5Cimages%5CCFBOFB.png">
+<meta property="og:image" content="d:%5Cbolg%5Csource%5Cimages%5CCTRjiami.png">
+<meta property="og:image" content="d:%5Cbolg%5Csource%5Cimages%5COFBCTR.png">
+<meta property="og:image" content="d:%5Cbolg%5Csource%5Cimages%5Cquanduibi.png">
+<meta property="og:image" content="d:%5Cbolg%5Csource%5Cimages%5Chunhejiami.png">
+<meta property="og:image" content="d:%5Cbolg%5Csource%5Cimages%5Chunhejiemi.png">
+<meta property="og:image" content="d:%5Cbolg%5Csource%5Cimages%5Cxiaoxirenzhenma.png">
+<meta property="og:image" content="d:%5Cbolg%5Csource%5Cimages%5CHAMC.png">
+<meta property="article:published_time" content="2020-06-27T14:17:55.572Z">
+<meta property="article:modified_time" content="2020-06-27T14:45:31.551Z">
 <meta property="article:author" content="shmily">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="d:%5Cbolg%5Csource%5Cimages%5C%E5%88%86%E7%B1%BB.png">
 
-<link rel="canonical" href="http://yoursite.com/">
+<link rel="canonical" href="http://yoursite.com/2020/06/27/%E7%AC%94%E8%AE%B0/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>Hexo</title>
+  <title>笔记 | Hexo</title>
   
 
 
@@ -139,9 +164,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -157,10 +183,9 @@
       <meta itemprop="name" content="Hexo">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/06/27/%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">笔记</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          笔记
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -184,7 +209,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="密码学笔记"><a href="#密码学笔记" class="headerlink" title="密码学笔记"></a>密码学笔记</h2><p><img src="D:%5Cbolg%5Csource%5Cimages%5C%E5%88%86%E7%B1%BB.png" alt=""></p>
+        <h2 id="密码学笔记"><a href="#密码学笔记" class="headerlink" title="密码学笔记"></a>密码学笔记</h2><p><img src="D:%5Cbolg%5Csource%5Cimages%5C%E5%88%86%E7%B1%BB.png" alt=""></p>
 <h3 id="古典密码"><a href="#古典密码" class="headerlink" title="古典密码"></a>古典密码</h3><ul>
 <li><p>凯撒密码</p>
 </li>
@@ -316,154 +341,30 @@
 
 
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/25/test/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="shmily">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/06/25/test/" class="post-title-link" itemprop="url">test</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-06-25 07:16:02 / 修改时间：10:39:20" itemprop="dateCreated datePublished" datetime="2020-06-25T07:16:02Z">2020-06-25</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="这是测试"><a href="#这是测试" class="headerlink" title="这是测试"></a>这是测试</h1><p><img src="http://image.baidu.com/search/detail?ct=503316480&z=undefined&tn=baiduimagedetail&ipn=d&word=%E7%BE%8E%E9%A3%9F%20-baijiahao&step_word=&ie=utf-8&in=&cl=2&lm=-1&st=undefined&hd=undefined&latest=undefined&copyright=undefined&cs=2870728590,1044295151&os=1496628505,3189291233&simid=38565316,823752426&pn=1&rn=1&di=200640&ln=1975&fr=&fmq=1593066741576_R&fm=&ic=undefined&s=undefined&se=&sme=&tab=0&width=undefined&height=undefined&face=undefined&is=0,0&istype=0&ist=&jit=&bdtype=0&spn=0&pi=0&gsm=0&objurl=http%3A%2F%2Fi.dimg.cc%2F0a%2F36%2F4e%2F67%2F7d%2F55%2F38%2Fc2%2Fe7%2F69%2Fbb%2Fb3%2F52%2F73%2F0c%2F62.jpg&rpstart=0&rpnum=0&adpicid=0&force=undefined" alt="avatar"></p>
-<p><img src="https://github.com/shmilylu/tuchuang/blob/master/3DES.png" alt="avatar"></p>
-<p>这是图片</p>
-<p><img src="D:%5Cbolg%5Csource_posts%5CDES.png" alt="avatar"></p>
-<p><img src="https://github.com/shmilylu/tuchuang/blob/master/3DES.png" alt="avatar"><br>zheshi<br><img src="/images/DES.png" alt=""></p>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/06/25/test/" rel="prev" title="test">
+      <i class="fa fa-chevron-left"></i> test
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/25/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="shmily">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/06/25/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-06-25 06:59:25" itemprop="dateCreated datePublished" datetime="2020-06-25T06:59:25Z">2020-06-25</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
@@ -516,6 +417,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#密码学笔记"><span class="nav-number">1.</span> <span class="nav-text">密码学笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#古典密码"><span class="nav-number">1.1.</span> <span class="nav-text">古典密码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#现代密码"><span class="nav-number">1.2.</span> <span class="nav-text">现代密码</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#对称密码"><span class="nav-number">1.2.1.</span> <span class="nav-text">对称密码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#密码分类"><span class="nav-number">1.2.2.</span> <span class="nav-text">密码分类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分组密码的模式"><span class="nav-number">1.2.3.</span> <span class="nav-text">分组密码的模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#公钥密码"><span class="nav-number">1.2.4.</span> <span class="nav-text">公钥密码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#混合密码系统"><span class="nav-number">1.2.5.</span> <span class="nav-text">混合密码系统</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#认证"><span class="nav-number">1.2.6.</span> <span class="nav-text">认证</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#单向散列函数"><span class="nav-number">1.2.6.1.</span> <span class="nav-text">单向散列函数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#消息认证码"><span class="nav-number">1.2.6.2.</span> <span class="nav-text">消息认证码</span></a></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
